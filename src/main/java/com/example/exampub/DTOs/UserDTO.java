@@ -2,10 +2,8 @@ package com.example.exampub.DTOs;
 
 import com.example.exampub.models.User;
 import lombok.Data;
-
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Date;
 
 @Data
 public class UserDTO {
