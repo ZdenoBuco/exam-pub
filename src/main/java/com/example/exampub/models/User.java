@@ -1,5 +1,6 @@
 package com.example.exampub.models;
 
+import com.example.exampub.DTOs.OrderDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,4 +23,5 @@ public class User {
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "order_id", referencedColumnName = "id")
     private List<Order> orders;
+
 }
