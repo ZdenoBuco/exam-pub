@@ -21,7 +21,7 @@ public class User {
     private LocalDate dateOfBirth;
     private Double pocket;
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "order_id", referencedColumnName = "id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     private List<Order> orders;
 
 }

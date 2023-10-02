@@ -19,7 +19,4 @@ public class Order {
     private String productName;
     private Integer Amount;
     private double price;
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "drink_id", referencedColumnName = "id")
-    private List<Drink> drinks;
 }

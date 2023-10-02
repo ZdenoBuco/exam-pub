@@ -6,5 +6,5 @@ import com.example.exampub.models.User;
 
 public interface UserService {
     Iterable<UserDTO> findAllUsers();
-    UserResponseDTO findUserByID(Long id);
+    User findUserByID(Long id);
 }
