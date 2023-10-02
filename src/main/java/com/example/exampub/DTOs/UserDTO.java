@@ -7,12 +7,14 @@ import java.time.Period;
 
 @Data
 public class UserDTO {
+    private Long id;
     private String name;
     private boolean isActive;
     private boolean isAdult;
     private Double pocket;
 
     public UserDTO(User user) {
+        this.id = user.getId();
         this.name = user.getName();
         this.isActive = user.isActive();
         this.isAdult = UserDTO.setIfIsAdult(user.getDateOfBirth());
