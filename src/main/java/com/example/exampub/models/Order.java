@@ -10,7 +10,6 @@ import java.util.List;
 @Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "`order`")
 public class Order {
     @Id
@@ -19,4 +18,10 @@ public class Order {
     private String productName;
     private Integer Amount;
     private double price;
+
+    public Order(String productName, Integer amount, double price) {
+        this.productName = productName;
+        Amount = amount;
+        this.price = price;
+    }
 }

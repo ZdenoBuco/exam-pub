@@ -6,8 +6,12 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public interface OrderRepo extends CrudRepository<Order, Long> {
     @Query(value = "SELECT * FROM order WHERE user_id = :id", nativeQuery = true)
-    Order findOrderByUserId(@Param("id") Long id);
+    List<Order> findOrdersByUserId(@Param("id") Long id);
+
 }

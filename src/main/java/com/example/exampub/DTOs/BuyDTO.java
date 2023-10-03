@@ -6,5 +6,5 @@ import lombok.Data;
 public class BuyDTO {
     private Long UserId;
     private Long ProductId;
-    private double price;
+    private Integer amount;
 }

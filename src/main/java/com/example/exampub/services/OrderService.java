@@ -5,5 +5,6 @@ import com.example.exampub.models.Drink;
 
 public interface OrderService {
     void addDrinkIntoOrder(BuyDTO buyDTO);
+    void buyOrderedItems(BuyDTO buyDTO);
 
 }
